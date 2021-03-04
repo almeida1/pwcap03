@@ -17,11 +17,11 @@ public class HomeController {
 		return new ModelAndView ("paginaLogin");
 	}
 
-	@GetMapping("/aluno/cadastrar")
-	public String cadastrarAluno() {
-		return "/cadastrarAluno";
+	@RequestMapping(value = "/aluno/cadastrar", method = RequestMethod.GET)
+	public ModelAndView cadastrarAluno() {
+		return new ModelAndView ("cadastrarAluno");
 	}
-	@GetMapping("/livro/cadastrar")
+	@RequestMapping(value = "/livro/cadastrar", method = RequestMethod.GET)
 	public String cadastrarLivro() {
 		return "/cadastrarLivro";
 	}
