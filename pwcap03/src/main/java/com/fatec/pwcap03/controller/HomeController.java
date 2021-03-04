@@ -22,7 +22,7 @@ public class HomeController {
 		return new ModelAndView ("cadastrarAluno");
 	}
 	@RequestMapping(value = "/livro/cadastrar", method = RequestMethod.GET)
-	public String cadastrarLivro() {
-		return "/cadastrarLivro";
+	public ModelAndView cadastrarLivro() {
+		return new ModelAndView ("cadastrarLivro");
 	}
 }
